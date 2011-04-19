@@ -1,0 +1,18 @@
+/* $Id$ */
+
+
+#edit-field-ref-txn-dir-person, #edit-field-ref-txn-dir-phone, #edit-field-ref-txn-dir-email, #edit-field-ref-txn-dir-chat, #edit-field-ref-txn-dir-mail {
+  float: left;
+}
+
+#edit-field-ref-txn-ref-person, #edit-field-ref-txn-ref-phone, #edit-field-ref-txn-ref-email, #edit-field-ref-txn-ref-chat, #edit-field-ref-txn-ref-mail {
+  float: left;
+}
+
+#edit-field-ref-txn-tech-person, #edit-field-ref-txn-tech-phone, #edit-field-ref-txn-tech-email, #edit-field-ref-txn-tech-chat, #edit-field-ref-txn-tech-mail {
+  float: left;
+}
+
+#node_ref_txn_form_group_ref_txn_dir .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_ref .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_tech .fieldset-wrapper {
+  padding-top: 15px;
+}
