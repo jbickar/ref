@@ -1,7 +1,13 @@
-(function ($) {
+//$Id$
+(function($) { 
+//$(alert("Hello, World!"));
 
-Drupal.behaviors.refClickIncrement = {
-  return;
-};
+$(document).ready(function() {
+  $("#field-ref-txn-dir-person-add-more-wrapper").css("background-color","red");
+});
+
+/*$(document).ready(function() {
+ alert($('field-ref-txn-dir-person-add-more-wrapper').length + ' elements!'); 
+});*/ 
 
 })(jQuery);

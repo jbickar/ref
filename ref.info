@@ -9,7 +9,7 @@ stylesheets[all][] = css/ref.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/style.css
 
-; scripts[all][] = js/script.js
+scripts[] = js/script.js
 
 regions[header] = Header
 regions[help] = Help
