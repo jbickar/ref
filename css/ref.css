@@ -1,6 +1,8 @@
 /* $Id$ */
 
-
+/*
+ * Float form elements together
+ */
 #edit-field-ref-txn-dir-person, #edit-field-ref-txn-dir-phone, #edit-field-ref-txn-dir-email, #edit-field-ref-txn-dir-chat, #edit-field-ref-txn-dir-mail {
   float: left;
 }
@@ -13,6 +15,73 @@
   float: left;
 }
 
+/*
+ * Spacing and positioning
+ */
+ 
+#ref-txn-node-form fieldset {
+  width: 240px;
+}
+
 #node_ref_txn_form_group_ref_txn_dir .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_ref .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_tech .fieldset-wrapper {
-  padding-top: 15px;
+  padding-top: 25px;
+  width: 
+}
+
+/*
+ * Icons and text
+ */
+#edit-field-ref-txn-dir-person label, #edit-field-ref-txn-ref-person label, #edit-field-ref-txn-tech-person label {
+  display: block;
+  background: url(../images/user_comment.png) no-repeat;
+  font-size: 0;
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+#edit-field-ref-txn-dir-phone label, #edit-field-ref-txn-ref-phone label, #edit-field-ref-txn-tech-phone label {
+  display: block;
+  background: url(../images/telephone.png) no-repeat;
+  font-size: 0;
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+#edit-field-ref-txn-dir-email label, #edit-field-ref-txn-ref-email label, #edit-field-ref-txn-tech-email label {
+  display: block;
+  background: url(../images/email.png) no-repeat;
+  font-size: 0;
+  color: #5D8BCA;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+#edit-field-ref-txn-dir-chat label, #edit-field-ref-txn-ref-chat label, #edit-field-ref-txn-tech-chat label {
+  display: block;
+  background: url(../images/computer.png) no-repeat;
+  font-size: 0;
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+#edit-field-ref-txn-dir-mail label, #edit-field-ref-txn-ref-mail label, #edit-field-ref-txn-tech-mail label {
+  display: block;
+  background: url(../images/page_white_edit.png) no-repeat;
+  font-size: 0;
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-left: 15px;
 }
