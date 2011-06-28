@@ -21,6 +21,23 @@ function ref_preprocess_html(&$variables) {
     || !empty($variables['page']['footer_fourthcolumn'])) {
     $variables['classes_array'][] = 'footer-columns';
   }
+  
+  // Change the page title to match the node add form language
+  $is_new_ref_txn = preg_match('/Create Reference Transaction/', $variables['head_title']);
+  if($is_new_ref_txn == 1) {
+    $variables['head_title'] = 'Enter Reference Statistics | RefStats';
+  }
+
+  $is_new_month_ref_txn = preg_match('/Create Monthly Reference Transaction/', $variables['head_title']);
+  if($is_new_month_ref_txn == 1) {
+    $variables['head_title'] = 'Enter Monthly Reference Statistics | RefStats';
+  }
+
+  $is_contact = preg_match('/Contact/', $variables['head_title']);
+  if($is_contact == 1) {
+    $variables['head_title'] = 'Feedback | RefStats';
+  }
+
 
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
@@ -35,6 +52,7 @@ function ref_process_html(&$variables) {
   if (module_exists('color')) {
     _color_html_alter($variables);
   }
+
 }
 
 /**
@@ -57,11 +75,27 @@ function ref_process_page(&$variables) {
     // If toggle_site_slogan is FALSE, the site_slogan will be empty, so we rebuild it.
     $variables['site_slogan'] = filter_xss_admin(variable_get('site_slogan', ''));
   }
+  if(preg_match('/^Create Reference Transaction/', $variables['title']) > 0) {
+    $variables['title'] = t('Enter Reference Statistics');
+  }
+  if(preg_match('/^Create Monthly Reference Transaction/', $variables['title']) > 0) {
+    $variables['title'] = t('Enter Monthly Reference Statistics');
+  }
+  if(preg_match('/^Create Tour/', $variables['title']) > 0) {
+    $variables['title'] = t('Enter Tour Information');
+  }
   if(preg_match('/^Create/', $variables['title']) > 0) {
     $title = explode(' ', $variables['title']);
     $title[0] = 'Add';
     $variables['title'] = implode(' ', $title);
   }
+
+  if(preg_match('/^Contact/', $variables['title']) > 0) {
+    $title = explode(' ', $variables['title']);
+    $title[0] = 'Feedback';
+    $variables['title'] = implode(' ', $title);
+  }
+
   // Since the title and the shortcut link are both block level elements,
   // positioning them next to each other is much simpler with a wrapper div.
   if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
@@ -156,4 +190,10 @@ function ref_field__taxonomy_term_reference($variables) {
   $output = '<div class="' . $variables['classes'] . (!in_array('clearfix', $variables['classes_array']) ? ' clearfix' : '') . '">' . $output . '</div>';
 
   return $output;
+}
+
+function ref_date_part_label_ampm($vars) {
+  $part_type = $vars['part_type'];
+  $element = $vars['element'];
+  return 'AM/PM';
 }

@@ -15,23 +15,45 @@
   float: left;
 }
 
+#edit-field-ref-txn-docs-person, #edit-field-ref-txn-docs-phone, #edit-field-ref-txn-docs-email, #edit-field-ref-txn-docs-chat, #edit-field-ref-txn-docs-mail {
+  float: left;
+}
+
+/*
+ * Monthly input form
+ */
+.form-item-field-ref-txn-datetime-und-0-value-day, .form-item-field-ref-txn-datetime-und-0-value-hour {
+  display: none;
+}
+
 /*
  * Spacing and positioning
  */
  
-#ref-txn-node-form fieldset {
+#node_ref_txn_form_group_ref_txn_dir, #node_ref_txn_form_group_ref_txn_ref, #node_ref_txn_form_group_ref_txn_tech, #node_ref_txn_form_group_ref_txn_docs {
   width: 240px;
+  margin-bottom: 0;
+  max-height: 75px;
 }
 
-#node_ref_txn_form_group_ref_txn_dir .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_ref .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_tech .fieldset-wrapper {
+#node_ref_txn_form_group_ref_txn_dir .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_ref .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_tech .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_docs .fieldset-wrapper {
   padding-top: 25px;
-  width: 
+}
+
+#node_ref_txn_month_form_group_ref_txn_month_dir, #node_ref_txn_month_form_group_ref_txn_month_ref, #node_ref_txn_month_form_group_ref_txn_month_tech, #node_ref_txn_month_form_group_ref_txn_month_docs {
+  width: 240px;
+  margin-bottom: 0;
+  max-height: 75px;
+}
+
+#node_ref_txn_month_form_group_ref_txn_month_dir .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_ref .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_tech .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_docs .fieldset-wrapper {
+  padding-top: 25px;
 }
 
 /*
  * Icons and text
  */
-#edit-field-ref-txn-dir-person label, #edit-field-ref-txn-ref-person label, #edit-field-ref-txn-tech-person label {
+#edit-field-ref-txn-dir-person label, #edit-field-ref-txn-ref-person label, #edit-field-ref-txn-tech-person label, #edit-field-ref-txn-docs-person label {
   display: block;
   background: url(../images/user_comment.png) no-repeat;
   font-size: 0;
@@ -42,7 +64,7 @@
   margin-left: 15px;
 }
 
-#edit-field-ref-txn-dir-phone label, #edit-field-ref-txn-ref-phone label, #edit-field-ref-txn-tech-phone label {
+#edit-field-ref-txn-dir-phone label, #edit-field-ref-txn-ref-phone label, #edit-field-ref-txn-tech-phone label, #edit-field-ref-txn-docs-phone label {
   display: block;
   background: url(../images/telephone.png) no-repeat;
   font-size: 0;
@@ -53,7 +75,7 @@
   margin-left: 15px;
 }
 
-#edit-field-ref-txn-dir-email label, #edit-field-ref-txn-ref-email label, #edit-field-ref-txn-tech-email label {
+#edit-field-ref-txn-dir-email label, #edit-field-ref-txn-ref-email label, #edit-field-ref-txn-tech-email label, #edit-field-ref-txn-docs-email label {
   display: block;
   background: url(../images/email.png) no-repeat;
   font-size: 0;
@@ -64,7 +86,7 @@
   margin-left: 15px;
 }
 
-#edit-field-ref-txn-dir-chat label, #edit-field-ref-txn-ref-chat label, #edit-field-ref-txn-tech-chat label {
+#edit-field-ref-txn-dir-chat label, #edit-field-ref-txn-ref-chat label, #edit-field-ref-txn-tech-chat label, #edit-field-ref-txn-docs-chat label {
   display: block;
   background: url(../images/computer.png) no-repeat;
   font-size: 0;
@@ -75,7 +97,7 @@
   margin-left: 15px;
 }
 
-#edit-field-ref-txn-dir-mail label, #edit-field-ref-txn-ref-mail label, #edit-field-ref-txn-tech-mail label {
+#edit-field-ref-txn-dir-mail label, #edit-field-ref-txn-ref-mail label, #edit-field-ref-txn-tech-mail label, #edit-field-ref-txn-docs-mail label {
   display: block;
   background: url(../images/page_white_edit.png) no-repeat;
   font-size: 0;
@@ -85,3 +107,4 @@
   padding: 2px;
   margin-left: 15px;
 }
+
