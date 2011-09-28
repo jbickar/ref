@@ -1,0 +1,84 @@
+#edit-field-ref-txn-dir-person label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -10px;
+}
+#edit-field-ref-txn-dir-phone label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -58px;
+}
+#edit-field-ref-txn-dir-email label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -106px;
+}
+#edit-field-ref-txn-dir-chat label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -154px;
+}
+#edit-field-ref-txn-dir-mail label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -202px;
+}
+#edit-field-ref-txn-ref-person label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -250px;
+}
+#edit-field-ref-txn-ref-phone label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -298px;
+}
+#edit-field-ref-txn-ref-email label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -346px;
+}
+#edit-field-ref-txn-ref-chat label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -394px;
+}
+#edit-field-ref-txn-ref-mail label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -442px;
+}
+#edit-field-ref-txn-tech-person label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -490px;
+}
+#edit-field-ref-txn-tech-phone label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -538px;
+}
+#edit-field-ref-txn-tech-email label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -586px;
+}
+#edit-field-ref-txn-tech-chat label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -634px;
+}
+#edit-field-ref-txn-tech-mail label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -682px;
+}
+#edit-field-ref-txn-docs-person label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -730px;
+}
+#edit-field-ref-txn-docs-phone label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -778px;
+}
+#edit-field-ref-txn-docs-email label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -826px;
+}
+#edit-field-ref-txn-docs-chat label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -874px;
+}
+#edit-field-ref-txn-docs-mail label {
+  background-image: url("../images/spriteme1.png");
+  background-position: -10px -922px;
+}
+html.js fieldset.collapsible .fieldset-legend {
+  background-image: url("../images/spriteme1.png");
+  background-position: -5px -960px;
+}
