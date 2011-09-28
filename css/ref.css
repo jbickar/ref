@@ -1,6 +1,13 @@
 /* $Id$ */
 
 /*
+ *  Page elements
+ */
+body {
+  background-color: #EAF1F3;
+}
+
+/*
  * Float form elements together
  */
 #edit-field-ref-txn-dir-person, #edit-field-ref-txn-dir-phone, #edit-field-ref-txn-dir-email, #edit-field-ref-txn-dir-chat, #edit-field-ref-txn-dir-mail {
@@ -20,20 +27,46 @@
 }
 
 /*
+ * Daily input form
+ */
+#edit-field-ref-txn-datetime {
+  width: 370px;
+  margin-left: -3px;
+}
+
+#edit-field-ref-txn-datetime .container-inline-date {
+  border: 0;
+  background-color: #F6F5F5;
+}
+
+#fieldset-date-and-time- {
+  background-color: #F6F5F5;
+}
+
+#fieldset-date-and-time- .date-float {
+  display: none;
+}
+
+/*
  * Monthly input form
  */
 .form-item-field-ref-txn-datetime-und-0-value-day, .form-item-field-ref-txn-datetime-und-0-value-hour {
-  display: none;
+  /*display: none; */
 }
 
 /*
  * Spacing and positioning
  */
- 
+
+#edit-field-ref-txn-tax-branch-und, #edit-field-ref-txn-tax-sp-und, #edit-field-ref-txn-tax-patron-und {
+  width: 22em;
+}
+
 #node_ref_txn_form_group_ref_txn_dir, #node_ref_txn_form_group_ref_txn_ref, #node_ref_txn_form_group_ref_txn_tech, #node_ref_txn_form_group_ref_txn_docs {
   width: 240px;
   margin-bottom: 0;
-  max-height: 75px;
+  max-height: 83px;
+  background-color: #F6F5F5;
 }
 
 #node_ref_txn_form_group_ref_txn_dir .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_ref .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_tech .fieldset-wrapper, #node_ref_txn_form_group_ref_txn_docs .fieldset-wrapper {
@@ -43,7 +76,8 @@
 #node_ref_txn_month_form_group_ref_txn_month_dir, #node_ref_txn_month_form_group_ref_txn_month_ref, #node_ref_txn_month_form_group_ref_txn_month_tech, #node_ref_txn_month_form_group_ref_txn_month_docs {
   width: 240px;
   margin-bottom: 0;
-  max-height: 75px;
+  max-height: 83px;
+  background-color: #F6F5F5;
 }
 
 #node_ref_txn_month_form_group_ref_txn_month_dir .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_ref .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_tech .fieldset-wrapper, #node_ref_txn_month_form_group_ref_txn_month_docs .fieldset-wrapper {
@@ -55,56 +89,177 @@
  */
 #edit-field-ref-txn-dir-person label, #edit-field-ref-txn-ref-person label, #edit-field-ref-txn-tech-person label, #edit-field-ref-txn-docs-person label {
   display: block;
-  background: url(../images/user_comment.png) no-repeat;
+/*  background: url(../images/user_comment.png) no-repeat; */
+/*  background: url(../images/in-person1.png) no-repeat;*/
   font-size: 0;
-  color: #FFFFFF;
-  width: 16px;
-  height: 16px;
+  color: #F6F5F5;
+  width: 24px;
+  height: 24px;
   padding: 2px;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#edit-field-ref-txn-dir-person label {
+  background: url(../images/in-person-dir.png) no-repeat;
+}
+
+#edit-field-ref-txn-ref-person label {
+  background: url(../images/in-person-ref.png) no-repeat;
+}
+
+#edit-field-ref-txn-tech-person label {
+  background: url(../images/in-person-tech.png) no-repeat;
+}
+
+#edit-field-ref-txn-docs-person label {
+  background: url(../images/in-person-docs.png) no-repeat;
 }
 
 #edit-field-ref-txn-dir-phone label, #edit-field-ref-txn-ref-phone label, #edit-field-ref-txn-tech-phone label, #edit-field-ref-txn-docs-phone label {
   display: block;
-  background: url(../images/telephone.png) no-repeat;
+/*  background: url(../images/telephone.png) no-repeat;*/
+/*  background: url(../images/phone.png) no-repeat;*/
   font-size: 0;
-  color: #FFFFFF;
-  width: 16px;
-  height: 16px;
+  color: #F6F5F5;
+  width: 24px;
+  height: 24px;
   padding: 2px;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#edit-field-ref-txn-dir-phone label {
+  background: url(../images/phone-dir.png) no-repeat;
+}
+
+#edit-field-ref-txn-ref-phone label {
+  background: url(../images/phone-ref.png) no-repeat;
+}
+
+#edit-field-ref-txn-tech-phone label {
+  background: url(../images/phone-tech.png) no-repeat;
+}
+
+#edit-field-ref-txn-docs-phone label {
+  background: url(../images/phone-docs.png) no-repeat;
 }
 
 #edit-field-ref-txn-dir-email label, #edit-field-ref-txn-ref-email label, #edit-field-ref-txn-tech-email label, #edit-field-ref-txn-docs-email label {
   display: block;
-  background: url(../images/email.png) no-repeat;
+/*  background: url(../images/email-laptop.png) no-repeat;*/
+/*  background: url(../images/askus_email.png) no-repeat; */
   font-size: 0;
-  color: #5D8BCA;
-  width: 16px;
-  height: 16px;
+  color: #F6F5F5;
+  width: 24px;
+  height: 24px;
   padding: 2px;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#edit-field-ref-txn-dir-email label {
+  background: url(../images/email-dir.png) no-repeat;
+}
+
+#edit-field-ref-txn-ref-email label {
+  background: url(../images/email-ref.png) no-repeat;
+}
+
+#edit-field-ref-txn-tech-email label {
+  background: url(../images/email-tech.png) no-repeat;
+}
+
+#edit-field-ref-txn-docs-email label {
+  background: url(../images/email-docs.png) no-repeat;
 }
 
 #edit-field-ref-txn-dir-chat label, #edit-field-ref-txn-ref-chat label, #edit-field-ref-txn-tech-chat label, #edit-field-ref-txn-docs-chat label {
   display: block;
-  background: url(../images/computer.png) no-repeat;
+/*  background: url(../images/computer.png) no-repeat;*/
+/*  background: url(../images/im.png) no-repeat;*/
   font-size: 0;
-  color: #FFFFFF;
-  width: 16px;
-  height: 16px;
+  color: #F6F5F5;
+  width: 24px;
+  height: 24px;
   padding: 2px;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#edit-field-ref-txn-dir-chat label {
+  background: url(../images/im-dir.png) no-repeat;
+}
+
+#edit-field-ref-txn-ref-chat label {
+  background: url(../images/im-ref.png) no-repeat;
+}
+
+#edit-field-ref-txn-tech-chat label {
+  background: url(../images/im-tech.png) no-repeat;
+}
+
+#edit-field-ref-txn-docs-chat label {
+  background: url(../images/im-docs.png) no-repeat;
 }
 
 #edit-field-ref-txn-dir-mail label, #edit-field-ref-txn-ref-mail label, #edit-field-ref-txn-tech-mail label, #edit-field-ref-txn-docs-mail label {
   display: block;
-  background: url(../images/page_white_edit.png) no-repeat;
+/*  background: url(../images/mail.png) no-repeat;*/
+/*  background: url(../images/askus_email.png) no-repeat;*/
   font-size: 0;
-  color: #FFFFFF;
-  width: 16px;
-  height: 16px;
+  color: #F6F5F5;
+  width: 24px;
+  height: 24px;
   padding: 2px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
+#edit-field-ref-txn-dir-mail label {
+  background: url(../images/mail-dir.png) no-repeat;
+}
+
+#edit-field-ref-txn-ref-mail label {
+  background: url(../images/mail-ref.png) no-repeat;
+}
+
+#edit-field-ref-txn-tech-mail label {
+  background: url(../images/mail-tech.png) no-repeat;
+}
+
+#edit-field-ref-txn-docs-mail label {
+  background: url(../images/mail-docs.png) no-repeat;
+}
+
+/*
+ * Views styling
+ */
+.view-id-summary_stats2 th, .view-id-summary_stats_calc_v5b th, .view-id-summary_stats_calc_v6 th, .view-id-summary_stats_calc_v7 th {
+  max-width: 20px;
+  font-size: 80%;
+}
+
+th.views-field-field-ref-txn-dir-person, th.views-field-field-ref-txn-ref-person, th.views-field-field-ref-txn-tech-person, th.views-field-field-ref-txn-docs-person{
+  background: url(../images/in-person1.png) no-repeat;
+  background-color: #6B6E6F;
+}
+
+th.views-field-field-ref-txn-dir-phone, th.views-field-field-ref-txn-ref-phone, th.views-field-field-ref-txn-tech-phone, th.views-field-field-ref-txn-docs-phone{
+  background: url(../images/phone.png) no-repeat;
+  background-color: #6B6E6F;
+}
+
+th.views-field-field-ref-txn-dir-email, th.views-field-field-ref-txn-ref-email, th.views-field-field-ref-txn-tech-email, th.views-field-field-ref-txn-docs-email{
+  background: url(../images/email-laptop.png) no-repeat;
+  background-color: #6B6E6F;
+}
+
+th.views-field-field-ref-txn-dir-chat, th.views-field-field-ref-txn-ref-chat, th.views-field-field-ref-txn-tech-chat, th.views-field-field-ref-txn-docs-chat{
+  background: url(../images/im.png) no-repeat;
+  background-color: #6B6E6F;
+}
+
+th.views-field-field-ref-txn-dir-mail, th.views-field-field-ref-txn-ref-mail, th.views-field-field-ref-txn-tech-mail, th.views-field-field-ref-txn-docs-mail{
+  background: url(../images/mail.png) no-repeat;
+  background-color: #6B6E6F;
+}
+
+.view-summary-stats-calc-v5b .views-exposed-widgets, .view-summary-stats-calc-v6 .views-exposed-widgets, .view-summary-stats-calc-v7 .views-exposed-widgets {
+  width: 890px;
+}

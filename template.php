@@ -33,6 +33,11 @@ function ref_preprocess_html(&$variables) {
     $variables['head_title'] = 'Enter Monthly Reference Statistics | RefStats';
   }
 
+  $is_new_ref_txn = preg_match('/Create Tours/', $variables['head_title']);
+  if($is_new_ref_txn == 1) {
+    $variables['head_title'] = 'Enter Tour or Instruction Session Information | RefStats';
+  }
+
   $is_contact = preg_match('/Contact/', $variables['head_title']);
   if($is_contact == 1) {
     $variables['head_title'] = 'Feedback | RefStats';
@@ -82,7 +87,7 @@ function ref_process_page(&$variables) {
     $variables['title'] = t('Enter Monthly Reference Statistics');
   }
   if(preg_match('/^Create Tour/', $variables['title']) > 0) {
-    $variables['title'] = t('Enter Tour Information');
+    $variables['title'] = t('Enter Tour or Instruction Session Information');
   }
   if(preg_match('/^Create/', $variables['title']) > 0) {
     $title = explode(' ', $variables['title']);

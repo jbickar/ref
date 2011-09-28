@@ -107,7 +107,8 @@ body,
 #site-slogan,
 .ui-widget,
 .comment-form label {
-  font-family: Georgia, "Times New Roman", Times, serif;
+/*  font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #header,
 #footer-wrapper,
@@ -1133,11 +1134,17 @@ fieldset {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
+
 .fieldset-wrapper {
   margin-top: 25px;
 }
+
 .node-form .fieldset-wrapper {
   margin-top: 0;
+}
+
+#field-ref-txn-datetime-add-more-wrapper .fieldset-wrapper {
+  margin-top: 20px;
 }
 .filter-wrapper {
   top: 0;

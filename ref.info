@@ -8,6 +8,7 @@ engine = phptemplate
 stylesheets[all][] = css/ref.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/sprite.css
 
 scripts[] = js/script.js
 
