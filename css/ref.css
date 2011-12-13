@@ -230,7 +230,7 @@ body {
 /*
  * Views styling
  */
-.view-id-summary_stats2 th, .view-id-summary_stats_calc_v5b th, .view-id-summary_stats_calc_v6 th, .view-id-summary_stats_calc_v7 th {
+.view-id-summary_stats2 th, .view-id-summary_stats_calc_v5b th, .view-id-summary_stats_calc_v6 th, .view-id-summary_stats_calc_v7 th, .view-id-aggregation th {
   max-width: 20px;
   font-size: 80%;
 }
